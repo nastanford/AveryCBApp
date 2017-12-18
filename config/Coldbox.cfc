@@ -101,15 +101,14 @@
 
 
 //Register Layouts
-/*
 		layouts = [
-			{ name = "login",
-		 	  file = "Layout.tester.cfm",
-			  views = "vwLogin,test",
-			  folders = "tags,pdf/single"
+			{ name = "admin",
+		 	  file = "admin.cfm",
+			  views = "",
+			  folders = "admin"
 			}
 		];
-*/
+
 
 
 		/*

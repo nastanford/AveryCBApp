@@ -19,15 +19,19 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Welcome</a>
+        <a class="navbar-brand" href="/"><cfoutput>#getSetting("appName")#</cfoutput></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <!--- <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item"><cfoutput>
+                <a class="nav-link" href="#event.buildLink('Admin.Main.index')#">Admin</a>
+              </cfoutput></li>
+            <!--- 
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
@@ -37,22 +41,22 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
-            </li> --->
+            </li>
+             --->
           </ul>
         </div>
       </div>
     </nav>
     <!-- Page Header -->
 
-    <!--- <header class="masthead" style="background-image: url('./includes/templates/startbootstrap-clean-blog-gh-pages/img/home-bg.jpg')"> --->
     <header class="masthead" style="background-image: url('includes/images/vacation.jpg')">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <h1><cfoutput>#getSetting("appName")#</cfoutput></h1>
-              <span class="subheading">Getting Started</span>
+              <h1>Programming Tips and Tricks</h1>  
+              <span class="subheading">Nathan Stanford Sr</span>
             </div>
           </div>
         </div>
@@ -93,7 +97,7 @@
                 </a>
               </li>
             </ul>
-            <p class="copyright text-muted">Copyright &copy; <cfoutput>#getSetting("appName")#</cfoutput> <cfoutput>#Year(now())#</cfoutput></p>
+            <p class="copyright text-muted">Copyright &copy; <cfoutput>#getSetting("appName")# - Programming Tips and Tricks - Nathan Stanford Sr #Year(now())#</cfoutput></p>
           </div>
         </div>
       </div>
